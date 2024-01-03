@@ -1,0 +1,195 @@
+/*Ustawienia podstawowe*/
+.grandparent{height: 1000px; width: 100%;}
+.banner{height: 10%; background-color: #0F2440; box-shadow: 10px 10px gray; text-align: center; animation-name: logo_anim; animation-duration: 4s; font-style: italic; border-color: #F2DD72; border-style: solid; border-width: 2px; text-shadow: 2px 2px #F2DD72;}
+
+.main_content{height: 89%; width: 100%; }
+.left_menu{width: 20%; height: 100%; float:left; background-color: #6C718C;}
+.right_menu{width: 20%; height: 100%; float:left; background-color: #6C718C;}
+.contents{width: 60%; height: 100%; float:left; background-color: #BF754B; color: #0F2440;}
+.footer{height: 5%; clear: both; background-color: #0F2440; color: #F2DD72;}
+.miniature{height: 200px; width: 400px;}
+.author_body{background-color: #BF754B; color: #0F2440;}
+#mobile_p{display: none;}
+#tablet_p{display: none;}
+#feedbackform{display: block;}
+.menulink_mobile{display: none; color: #C9D94E;}
+.menulink_mobile_left{display: none; color: #C9D94E;}
+table{display: flex;
+  align-items: center;
+  justify-content: center;}
+
+/*Ustawienia tabletowe*/
+@media screen and (max-width: 1200px){
+	#feedbackform{display: none;}
+	#mobile_p{display: none;}
+	#tablet_p{display: block; font-size:1.35vw;}
+	.menulink_mobile{display: block; color: #C9D94E;}
+	.menulink_right{display: none; color: #C9D94E;}
+	.main_content{font-size:1.35vw;} 
+	.menulink_mobile_left{display: none; color: #C9D94E;}
+}
+/*Ustawienia telefonowe*/
+@media screen and (max-width: 600px){
+	#feedbackform{display: none;}
+	#mobile_p{display: block;}
+	#tablet_p{display: none;}
+	.menulink_mobile_left{display: block; font-size:2.2vw; color: #C9D94E;}
+	.menulink_right{display: none; color: #C9D94E;}
+	.main_content{font-size:1.9vw; color: #C9D94E;}
+	.menulink_mobile{display: none; color: #C9D94E;}
+	table{display:none;}
+}
+.menulink_mobile{padding-left: 15px; color: #C9D94E;}
+.menulink_right{padding: 15px; color: #C9D94E;}
+.menulink_left{padding: 15px; color: #C9D94E;}
+
+
+td, th{border-color: #0F2440; border-width: 2.5px; border-style: solid;}
+#list_p{padding-left: 15px;}
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  
+  margin: auto;
+  padding: 0;
+  width: 50%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+  max-width: 100%;
+  height: auto;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+
+}
+#thumbnail1{ max-width: 100%;
+  height: auto;}
+#thumbnail2{ max-width: 100%;
+  height: auto;}
+#thumbnail3{ max-width: 100%;
+  height: auto;}
+#thumbnail4{ max-width: 100%;
+  height: auto;}
+#thumbnail5{ max-width: 100%;
+  height: auto;}
+#thumbnail6{ max-width: 100%;
+  height: auto;}
+#thumbnail7{ max-width: 100%;
+  height: auto;}       
+
+
+@keyframes logo_anim { from {background-color: #0F2440; box-shadow: 10px 10px gray; }
+  to {background-color: #BF754B; box-shadow: 10px 10px black; color: white;} }
+.shownimages{max-width: 100%;
+  height: auto; display: block;
+  margin-left: auto;
+  margin-right: auto;}
+  
